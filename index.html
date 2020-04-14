@@ -10,7 +10,8 @@
     <title>Let's Fight Covid</title>
 </head>
 <body>
-    <header>
+    <!-- HEADER -->
+    <header class="header">
         <div class="jumbotron">
             <h1>Lets Fight Covid</h1>
             <img src="./assets/svg/coronavirus.svg" alt="CoronaVirus">
@@ -21,15 +22,48 @@
         </div>
         
         <!-- Navigation -->
-        <nav>
+        <nav class="nav">
             <ul>
-                <li style="font-size: 200px;">HOME</li>
-                <li style="font-size: 200px;">ACTIVITY</li>
-                <li style="font-size: 200px;">ABOUT</li>
+                <li class="home"><a class="navlink" href="#" >HOME</a></li>
+                <li class="activity"><a class="navlink" href="#" >Activity</a></li>
+                <li class="about"><a class="navlink" href="#" >About</a></li>
+                <li class="parah"><a class="navlink" href="#" >PARAH</a></li>
+                <hr/>
             </ul>
         </nav>
+        <!-- Nav Mobile Version -->
+        <div class="nav2">
+            <div class="hamburger">
+                <p>MENU</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
 
-
+       
+       
     </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <article class="case">
+            <div class="card">
+                ACTIVE CASE
+            </div>
+            <div class="card">
+                DEATH
+            </div>
+        </article>
+    </main>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+    <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
