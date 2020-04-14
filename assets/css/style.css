@@ -1,0 +1,55 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C4C4C4;
+}
+
+/* Header */
+header{
+    display: inline;
+}
+
+.jumbotron{
+    font-size: 18px;
+    text-align: center;
+    padding: 60px;
+    background-color: #247BA0;
+    margin: 0 auto;
+    color: white;
+}
+
+.jumbotron h1{
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.jumbotron img{
+    width: 150px;
+}
+
+.jumbotron p{
+    text-align: justify;
+    font-family: sans-serif;
+    font-family: 'Baloo Paaji 2', cursive;
+    line-height: 1.1em;
+}
+
+/* Navigation */
+
+
+
+/* Mobile Version */
+@media screen and (max-width : 551px){
+    .jumbotron p{
+        text-align: center;
+    }
+}
+
