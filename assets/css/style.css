@@ -119,13 +119,68 @@ hr {
     display: none;
 }
 
+
+/* Section World Case */
+section{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 40px;
+}
+section h1{
+    text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #247BA0;
+    text-decoration: underline;
+}
+
 /* Card */
 .case{
     display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 10px auto;
+    /* justify-content: space-between; */
+    
 }
 
 .card{
-    
+    flex-grow: 1;
+    margin: 10px;
+    height: 200px;
+    background-color: white;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border-bottom: 1px solid tomato;
+    box-shadow: 5px 10px burlywood;
+    transition: ease-in-out 0.5s;
+}
+
+.card .container{
+    padding: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.one:hover{
+    box-shadow: 0px 0px 5px 5px burlywood;
+    border: 1px tomato solid;
+}
+
+.two:hover{
+    box-shadow: 0px 0px 5px 5px #3366cc;
+    border: 1px blue;
+}
+
+.three:hover{
+    box-shadow: 0px 0px 5px 5px #dc3912;
+    border: 1px red;
+}
+
+.four:hover{
+    box-shadow: 0px 0px 5px 5px #109618;
+    border: 1px green;
 }
 
 
@@ -171,6 +226,14 @@ hr {
         font-size: 20px;
     }
 
+
+
+
+
+    /* Flexbox */
+    .case{
+        flex-direction: column;
+    }
     
 
 }
