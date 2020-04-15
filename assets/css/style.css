@@ -25,10 +25,12 @@ header{
     background-color: #247BA0;
     margin: 0 auto;
     color: white;
+    position: relative;
 }
 
 .jumbotron h1{
     font-family: 'Baloo Paaji 2', cursive;
+    /* transition: .3s ; */
 }
 
 .jumbotron img{
@@ -43,13 +45,214 @@ header{
 }
 
 /* Navigation */
+.nav{
+    position: relative;
+    bottom: 25px;
+    background-color: white;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 14px;
+    border-radius: 20px;
+    list-style: none;
+
+}
+
+.active {
+    background-color: #247BA0;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    border-radius: 0;
+}
+
+
+
+.nav > ul{
+    margin: 0 auto;
+}
+
+.nav > ul > li{
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav > ul > li > a{
+    text-decoration: none;
+    color: #247BA0;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 18px;
+    display: inline-block;
+    min-width: 23.5%;
+    padding: .75rem 0;
+    margin: 0;
+}
+
+.activity:hover ~ hr{
+    margin-left: 23.5%;
+}
+
+.about:hover ~ hr{
+    margin-left: 48%;
+}
+
+.parah:hover ~ hr{
+    margin-left: 72.5%;
+}
+
+hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.nav2{
+    display: none;
+}
+
+.nav-links{
+    display: none;
+}
+
+
+/* Section World Case */
+section{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 40px;
+}
+section h1{
+    text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #247BA0;
+    text-decoration: underline;
+}
+
+/* Card */
+.case{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 10px auto;
+    /* justify-content: space-between; */
+    
+}
+
+.card{
+    flex-grow: 1;
+    margin: 10px;
+    height: 200px;
+    background-color: white;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border-bottom: 1px solid tomato;
+    box-shadow: 5px 10px burlywood;
+    transition: ease-in-out 0.5s;
+}
+
+.card .container{
+    padding: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.one:hover{
+    box-shadow: 0px 0px 5px 5px burlywood;
+    border: 1px tomato solid;
+}
+
+.two:hover{
+    box-shadow: 0px 0px 5px 5px #3366cc;
+    border: 1px blue;
+}
+
+.three:hover{
+    box-shadow: 0px 0px 5px 5px #dc3912;
+    border: 1px red;
+}
+
+.four:hover{
+    box-shadow: 0px 0px 5px 5px #109618;
+    border: 1px green;
+}
+
+
+
+
 
 
 
 /* Mobile Version */
-@media screen and (max-width : 551px){
+@media screen and (max-width : 709px){
     .jumbotron p{
         text-align: center;
     }
+
+    .nav{
+        display: none;
+    }
+
+    .nav2{
+        display: block;
+        position: sticky;
+        top: 40px;
+    }
+
+    .hamburger{
+        position: relative;
+        max-width: 100px;
+        margin: 0 auto;
+        transform: translate(0%,-50%);
+        background-color: #247BA0;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 40%;
+        cursor: pointer;
+        z-index:2;
+    }
+
+    .hamburger p {
+        font-family: 'Baloo Paaji 2', cursive;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+
+
+    /* Flexbox */
+    .case{
+        flex-direction: column;
+    }
+    
+
 }
+
+
+
+/* Random Search Responsive */
+@media screen and (max-width : 1279px){
+    nav {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width : 796px){
+    nav {
+        max-width: 90%;
+    }
+}
+
+
+
 
