@@ -86,23 +86,39 @@ input[type="submit"]:hover{
 }
 
 
-@media screen and (max-width : 1279px){
+/* @media screen and (max-width : 1279px){
 
     .container{
-        max-width: 600px;
+        max-width: 60%;
         height: 520px;
         margin: 50px auto;
         background-color: white;
     }
-}
+} */
 
 @media screen and (max-width : 796px){
 
     .container{
-        max-width: 400px;
-        height: 520px;
+        max-width: 70%;
+        height: 580px;
         margin: 50px auto;
         background-color: white;
+    }
+
+    .container h1{
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Baloo Paaji 2', cursive;
+        color: #247BA0;
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    .container-form{
+        max-width: 80%;
+        margin: 0 auto;
+        
+    
     }
 }
 
